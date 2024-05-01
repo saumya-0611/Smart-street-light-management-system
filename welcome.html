@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <title>Your Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Smart Street Light</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-transparent">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="about-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="dashboard-link">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="team-link">Team</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="dashboard" class="container mt-3 animated fadeIn">
+        <h2>Dashboard Section</h2>
+        <li type="none"><b>CITY A</b></li>
+        <ul type="none">
+            <div class="container">
+                <iframe src="cityA.html" width="100%" height="300px" frameborder="0"></iframe>
+            </div>
+        </ul>
+        <li type="none"><b>CITY B</b></li>
+        <ul type="none">
+            <div class="container">
+                <iframe src="cityB.html" width="100%" height="300px" frameborder="0"></iframe>
+            </div>
+        </ul>
+        
+
+    </section>
+
+    <section id="team" class="container mt-3 animated fadeIn">
+        <h2>Team Section</h2>
+        <li type="none"><b style="font-size: larger;">Project Lead        :</b> Kritik Prabhakar</li>
+        <li type="none"><b style="font-size: larger;">Researcher          :</b> Bhavika Dada Pawar</li>
+        <li type="none"><b style="font-size: larger;">Code Developer      :</b> Jivaj Arora</li>
+        <li type="none"><b style="font-size: larger;">Prototype Developer :</b> Gayathri</li>
+        <li type="none"><b style="font-size: larger;">Prototype Tester    :</b> Khushi Balyan</li>
+        <li type="none"><b style="font-size: larger;">Hardware Designer   :</b> Saumya Srivastava</li>
+    </section>
+
+    <section id="about" class="container mt-3 animated fadeIn">
+        <h2>What is Smart Street Light?</h2>
+        <p>By the word smart street light, it refers to a network-connected street light with some functions. Each street light is equipped with an outdoor lamp controller, internet of things device, and sensors. A smart street light automatically regulates the light intensity based on sunset or sunrise times, daily schedule, human presence, traffic, and weather situation. Thereby saving considerable energy and lowering the maintenance costs. Smart street lights also capture and transmit data in real-time to a central management system.</p>
+        <p><b>Some info the operator gets when operating are:</b>
+            <ul type="disc">
+                <li>Total control over each luminaire</li>
+                <li>Insight into the state of public lighting</li>
+                <li>Access to a range of lighting applications and services.</li>
+            </ul>
+        </p>
+    
+        <h2>How Do Smart Street Light Works in the Real world?</h2>
+        <p>
+            A smart street light automatically regulates the light intensity of the connected street light based 
+            on a smart algorithm and inputs from external sensors. Such inputs include local sunset or sunrise times, 
+            daily light level schedule, pre-programmed light scene, human presence, traffic, weather situations to 
+            work with. To achieve this, a conventional or LED street light is typically equipped with an outdoor lamp controller (OLC). 
+            The main purpose of this controller is to send and receive commands to or from the connected street light. 
+            Such commands include switching, dimming, scheduling, and maintenance messages when an error occurs. 
+            OLC also acts as a connection bridge between the connected street light and a central management system, 
+            which can be software. The OLC collects and shares luminaire data with the central management system.
+        </p>
+ 
+        <h2>Communication Technologies used by Smart Street Lights</h2>
+        <p>
+            An outdoor street lamp controller uses different communication technologies to connect with 
+            a central light management platform or command-and-control center. Each communication mode has its 
+            strengths and weaknesses.<br>
+            <ul>
+                <li><b style="color: rgb(189, 0, 0);">RF Mesh –</b> Radio Frequency Mesh which is one of the most common communication methods. Mostly suitable for small networks (below 5000 smart street lights). It is a widely used solution for motion sensor-based smart streetlights. RF Mesh uses a Zigbee-type wireless mesh network (2.4 GHz/ 868 MHz). Controllers typically report to a Gateway, which in turn, connects to CMS.</li>
+                <li><b style="color: rgb(189, 0, 0);">PLC –</b> Powerline communication uses existing power cables for data communication between the controller (OLC) and the Gateway (segment controller). It was a popular technology in the early 2000. However, it is an outdated technology often lacking replacement parts and lack improvements in security standards.</li>
+                <li><b style="color: rgb(189, 0, 0);">Cellular IoT –</b>Cellular IoT has become the most common solution for large citywide smart street light deployments (more than 5000 smart street lights). OLC connects directly to the local telecom tower (without physical Gateway). billions of devices use cellular IoT.</li>
+            </ul>
+        </p>
+
+        <h2>Types of Sensors which can be connected</h2>
+        <p>
+            Smart street lights are often equipped with one or more sensors. These sensors form part of the 
+            outdoor lamp controller (OLC) or are connected external to OLC. Different types of street light 
+            sensors and their functions are listed below:
+            <ul>
+                <li><b style="color: rgb(189, 0, 0);">Photocell / Ambient light sensor –</b> adjusts street lights illumination (including on and off switching) based on the surrounding environment’s light level.</li>
+                <li><b style="color: rgb(189, 0, 0);">Motion sensor –</b> adapts light intensity based on human presence detection. Brighter lights upon detection and lower light level when no one is around. Thereby combining public safety with excellent savings.</li>
+                <li><b style="color: rgb(189, 0, 0);">Acoustic sensor –</b> detects noise, such as a loud scream and traffic noise. And can also detect gunshots to alert the police.</li>
+                <li><b style="color: rgb(189, 0, 0);">Accelerometer – </b> detects pole tilt or pole hit – to raise alarm.</li>
+                <li><b style="color: rgb(189, 0, 0);">Parking lot sensor –</b> identifies vacant parking spaces.</li>
+            </ul>
+        </p>
+    </section>
+    
+
+    <footer class="bg-dark text-white mt-3">
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+           
+            document.getElementById('dashboard-link').addEventListener('click', function () {
+                toggleSection('dashboard');
+            });
+
+            document.getElementById('team-link').addEventListener('click', function () {
+                toggleSection('team');
+            });
+
+            document.getElementById('about-link').addEventListener('click', function () {
+                toggleSection('about');
+            });
+
+          
+            toggleSection('about');
+        });
+
+        function toggleSection(sectionId) {
+            
+            document.querySelectorAll('section').forEach(function (section) {
+                section.style.display = 'none';
+            });
+
+        
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        $(document).ready(function() {
+            function getData() {
+                var url ="https://api.thingspeak.com/channels/2475356/fields/1,2.json?api_key=KHXHQ7PFGJOI8KWF&results=5";
+
+                $.getJSON(url, function(data) {
+                    var field1Values = [];
+                    var field2Values = [];
+                    var timestamps = [];
+
+                    $.each(data.feeds, function(index, feed) {
+						field1Values.push(feed.field1);
+						field2Values.push(feed.field2);
+						timestamps.push(feed.created_at);
+					});
+                    //dealing the the graph 
+                    var ctx = document.getElementById('myChart').getContext('2d');
+
+                    var chart = new Chart(ctx, {
+                        type:'doughnut',
+                        data:{
+                            labels:timestamps,
+                            datasets:[{
+                                label: 'Temperature',
+                                data:field1Values,
+                                borderColor: '',
+                                backgroundColor: '#84bd00',
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'Humidity',
+                                data:field2Values,
+                                borderColor: '',
+                                backgroundColor: '#00205b',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                yAxes: [{
+                                    thicks: {
+                                        beginAtZero: true
+                                    }
+                                }]
+                            }
+                        }
+                    });
+                });
+            }
+            getData();
+        });    
+    </script>
+</body>
+</html>

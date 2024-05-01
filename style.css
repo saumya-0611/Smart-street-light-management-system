@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('aesthetic-white-and-green-background-with-space-for-text-modern-background-design-with-liquid-shape-white-background-with-green-liquid-shapes-free-vector.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; /* Ensure full viewport height */
+    overflow-y: hidden; /* Prevent scrolling */
+}
+
+.blur-background {
+    filter: blur(10px); /* Adjust the blur strength as needed */
+    -webkit-filter: blur(10px); /* For Safari */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-container input[type="submit"] {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    cursor: pointer;
+}
+/*mainpage*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+}
+
+
+nav {
+    background-color: #343a40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 10px;
+    font-family: 'Gothic A1', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d42828;
+    color: #ffffff;
+}
+
+section {
+    padding: 20px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Change from absolute to fixed */
+    bottom: 0; /* Stick to the bottom of the viewport */
+    z-index: 100; /* Ensure it stays above other content */
+}
+
+
+/* Animation styles */
+.animated {
+    animation-duration: 1s;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Header styles */
+.header {
+    background-color: lightgray;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative; /* Make the text container relative */
+    display: inline-block;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Apply the glow effect on hover */
+.header h1:hover {
+    animation: glow 1s infinite alternate; /* Apply the glow animation */
+}
+
+/* Define the glow animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #007bff, 0 0 70px #007bff, 0 0 80px #007bff, 0 0 100px #007bff, 0 0 140px #007bff;
+    }
+    100% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #007bff, 0 0 80px #007bff, 0 0 90px #007bff, 0 0 110px #007bff, 0 0 150px #007bff;
+    }
+}
+#dashboard b {
+    display: block;
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Add this CSS rule to center the iframes */
+#dashboard ul {
+    text-align: center;
+}

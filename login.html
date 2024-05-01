@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="blur-background"></div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" name="username" placeholder="Username" required ><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var username = this.elements.username.value;
+            var password = this.elements.password.value;            
+
+            if (username && password) {
+                window.location.href = "welcome.html"; // Redirect to welcome page
+            } else {
+                alert('Please enter both username and password.');
+            }
+        });
+    </script>
+</body>
+</html>
